@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>weatherData</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+
+  <p>
+    YOU MADE IT YAY
+  </p>
+<ul>
+  <li *ngFor="let weather of weatherData">
+    <img src="{{weather.icon}}">
+    
+  
+    
+    {{weather.id}}
+    <br>
+  </li>
+  </ul>
+
+     
+
+</ion-content>
+
+
+

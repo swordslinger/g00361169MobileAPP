@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { WeatherDataService } from '../weather-data.service';
 
 @NgModule({
   imports: [
@@ -20,4 +21,10 @@ import { HomePage } from './home.page';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule { weather;
+
+  constructor(){}
+  ngOnInit(){
+
+  }
+}
